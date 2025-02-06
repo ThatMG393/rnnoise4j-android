@@ -54,4 +54,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: libs-for-${{ matrix.target-simple }}
           path: rust/target/${{ matrix.target-triple }}/release/*.so
